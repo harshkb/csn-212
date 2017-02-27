@@ -14,8 +14,8 @@ int guests(vector<int> v, int n, int l)               // method to find number o
 		else
 			*it=num;                                 // if it is found then iterator value will be num
 	}
-	int length=var.size();                                 // calculate the size of store vector in length
-	var.clear();
+	int length=store.size();                                 // calculate the size of store vector in length
+	store.clear();
     return length;                                      // and return the length
  
 }
@@ -40,7 +40,7 @@ int main()
 		int count=0;                        // maximum number of guests available for lucky draw
 		for(int i=0; i<n; i++)
 		{
-			int temp=guets(v,n,i);    // number of guests eligible for lucky draw if there are n guests and we start from position i 
+			int temp=guests(v,n,i);    // number of guests eligible for lucky draw if there are n guests and we start from position i 
 			if(temp>count)            // if it is maximum number of guests
 			count=temp;               // then change change the vakue of count to maximum number of guests
 		}
