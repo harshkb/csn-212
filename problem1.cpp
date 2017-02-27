@@ -48,3 +48,9 @@ int main()
   cout<<methodlength(v)<<endl;                  // call the method and output the length
 }
 
+//Input
+// length of the input sequence
+// value of the sequences in order
+
+//Output
+//output the length which has alternate differences
