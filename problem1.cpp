@@ -5,7 +5,7 @@ using namespace std;
 
   int methodlength(vector<int> input)    // method for finding the length of sequence
   {
-     int n=input.size;                 //size of the input vector
+     int n=input.size();                 //size of the input vector
     if(n == 1)                // if input is only 1 then output is 1
     return 1;
     vector<int> v(n-1);           // create vector container to store the vaue of differences between input
