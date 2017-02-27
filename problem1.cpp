@@ -3,7 +3,7 @@
 using namespace std;
 
 
-  int longestZigZag(vector <int> seq)
+  int methodlength(vector <int> seq)
   {
     if(seq.size() == 1)
     return 1;
@@ -47,6 +47,6 @@ int main()
       v.push_back(val);
       i++;
   }
-  cout<<longestZigZag(v)<<endl;
+  cout<<methodlength(v)<<endl;
 }
 }
