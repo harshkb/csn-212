@@ -36,6 +36,11 @@ int main()
 			cin>>sheet;    
 			v.push_back(sheet);   // push the number on sheet
 		}
+		for (int i=0;i<n;i++)     // pushing back again all the values of sheets of guests in same order 
+        	{                        //so that it behaves circular upto 1 time of guest number
+            		sheet=v[i];           // so that after nth guest there comes again 1 to n guest sheets
+            		v.push_back(sheet);   
+       		 }
 		
 		int count=0;                        // maximum number of guests available for lucky draw
 		for(int i=0; i<n; i++)
